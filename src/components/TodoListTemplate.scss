@@ -1,0 +1,33 @@
+@import '~open-color/open-color';
+body{
+  background: $oc-gray-0;
+}
+.todo_list_template{
+  width: 512px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+  .title{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.5rem;
+    font-weight: 100;  
+    background: $oc-cyan-5;
+    color: white;   
+  }
+  
+  .form_wrapper{
+    padding: 1rem;
+    border-bottom: 1px solid $oc-cyan-5;
+  }
+
+  .pallete_wrapper{
+    padding: 1.5rem;  
+    background: $oc-gray-2;
+  }
+
+  .todos_wrapper{
+    min-height: 5px;
+  }
+}

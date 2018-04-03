@@ -1,0 +1,52 @@
+@import '~open-color/open-color';
+
+.todo_item {
+  padding: 1rem;
+  display: flex;
+  align-items: center; 
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+
+  &:hover{
+    background: $oc-cyan-0;
+
+    .remove{
+      opacity: 1;
+    }
+  }
+  & + .todo_item {
+    border-top: 1px solid #f1f3f5;
+  }
+
+  .remove {
+    margin-right: 1rem;
+    color: #e64980;
+    font-weight: 600;
+    opacity: 0;
+  }
+
+  .todo_text {
+    flex: 1;
+    word-break: break-all;
+  }
+
+  .checked {
+    text-decoration: line-through;
+    color: #adb5bd;
+  }
+
+  .check_mark {
+    font-size: 1.5rem;
+    line-height: 1rem;
+    margin-left: 1rem;
+    color: #3bc9db;
+    font-weight: 800;
+  }
+}
+
+
+
+
+
+
